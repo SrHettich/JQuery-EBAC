@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;;
+}
+
+header{
+    background-color: #8627df;
+    color: #fff;
+    display: flex;
+    padding: 16px 0;
+    justify-content: center;
+    border-bottom: 16px solid #561c8b;
+    font-style: italic;
+
+    & button{
+        margin-left: 16px;
+    }
+}
+
+form{
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+
+    & h2{
+        margin-bottom: 8px;
+    }
+}
+
+input, button{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    background-color: #2fc021;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+#botao-cancelar{
+    background-color: #db2626;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+
+
+    & li{
+        max-width: 25%;
+        position: relative;
+        list-style: none;
+        max-height: 240px;
+        overflow-y: hidden;
+
+
+        & img{
+            width: 100%;
+        }
+    }
+
+    & li:hover .overlay-img-link{
+        opacity: 1;
+    }
+}
+
+
+
+.overlay-img-link{
+    background-color: #000000ad;
+    position: absolute;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .3s;
+    
+    & a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
